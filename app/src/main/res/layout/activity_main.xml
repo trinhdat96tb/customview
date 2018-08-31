@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.activity.MainActivity">
+
+    <fragment
+        android:id="@+id/fragment_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.congdattrinh.fragment_demo.presentation.fragment.Fragment_header"
+        android:layout_alignParentTop="true"
+        tools:layout="@layout/header_view"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_header"/>
+
+    <fragment
+        android:id="@+id/fragment_footer"
+        android:name="com.example.congdattrinh.fragment_demo.presentation.fragment.Fragment_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/footer_view"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
