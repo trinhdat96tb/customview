@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity implements Footer.OnFooterLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
     public void showHeaderView(){
